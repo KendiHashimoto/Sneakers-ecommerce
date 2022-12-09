@@ -17,7 +17,14 @@ module.exports = {
       white: "hsl(0, 0%, 100%)",
       black: "hsl(0, 0%, 0%)", // with 75% opacity for lightbox background
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        navbar: "1fr 6fr 1fr",
+      },
+      spacing: {
+        logo: "140px",
+      },
+    },
   },
   plugins: [],
 }
