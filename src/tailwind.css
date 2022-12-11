@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-  .navbar {
-    @apply grid grid-cols-navbar 
-    mt-8 mx-48 gap-12;
-  }
-
-  .links {
-    @apply text-darkGrayishBlue;
+  .header {
+    @apply grid grid-cols-navbar
+    mx-48 my-7 gap-8 items-center;
   }
 }

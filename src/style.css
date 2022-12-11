@@ -10,3 +10,18 @@
 p {
   font-size: 16px;
 }
+
+li:after {
+  content: " ";
+  width: 0%;
+  position: absolute;
+  background-color: black;
+  height: 4px;
+  background-color: hsl(26, 100%, 55%);
+  bottom: -45px;
+  left: 0;
+}
+
+li:hover:after {
+  width: 100%;
+}
