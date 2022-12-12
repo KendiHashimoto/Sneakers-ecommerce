@@ -15,64 +15,87 @@
 <body>
 
   <!-- NAVBAR -->
-  <header>
-    <div class="header">
+  <header class="mb-20">
+    <div class="navbar">
       <div class="w-logo">
         <img class="cursor-pointer" src="assets/images/logo.svg" alt="Sneakers logo">
       </div>
 
-      <div class="h-2/4">
+      <div class="h-2/4 mx-10">
         <nav>
           <ul class="flex gap-8">
-            <li class="text-darkGrayishBlue relative"><a href="#">Collections</a></li>
-            <li class="text-darkGrayishBlue relative"><a href="#">Men</a></li>
-            <li class="text-darkGrayishBlue relative"><a href="#">Women</a></li>
-            <li class="text-darkGrayishBlue relative"><a href="#">About</a></li>
-            <li class="text-darkGrayishBlue relative"><a href="#">Contact</a></li>
+            <li class="link"><a href="#">Collections</a></li>
+            <li class="link"><a href="#">Men</a></li>
+            <li class="link"><a href="#">Women</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
 
-      <div class="flex justify-between">
-        <img class="w-5 h-5 self-center cursor-pointer" src="assets/images/icon-cart.svg" alt="Cart icon">
-        <img class="w-12 cursor-pointer" src="assets/images/image-avatar.png" alt="User avatar">
+      <div class="flex justify-end">
+        <img class="w-5 h-5 self-center cursor-pointer mr-10" src="assets/images/icon-cart.svg" alt="Cart icon">
+        <img class="avatar" src="assets/images/image-avatar.png" alt="User avatar">
       </div>
     </div>
+
     <div class="border mx-48 opacity-[0.06]"></div>
   </header>
 
-  <!-- MAIN -->
-  <main>
+  <main class="grid grid-cols-2 mx-64">
+    <!-- SNEAKERS CONTAINER -->
     <section>
+      <div class="mb-8">
+        <img class="w-[70%] rounded-2xl" src="assets/images/image-product-1.jpg" alt="Sneaker first image">
+      </div>
 
+      <div class="flex gap-8">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/images/image-product-1-thumbnail.jpg" alt="Sneaker first image">
+        </div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/images/image-product-2-thumbnail.jpg" alt="Sneaker second image">
+        </div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/images/image-product-3-thumbnail.jpg" alt="Sneaker third image">
+        </div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/images/image-product-4-thumbnail.jpg" alt="Sneaker fourth image">
+        </div>
+      </div>
     </section>
-    <section>
-      <h1>Sneaker Company</h1>
-      <h2>Fall Limited Edition Sneakers</h2>
-      <p>
+
+    <!-- SNEAKERS INFO CONTAINER -->
+    <section class="my-20">
+      <h1 class="mb-4 uppercase text-xs text-orange font-semibold tracking-widest">Sneaker Company</h1>
+      <h2 class="mb-10 font-bold text-5xl">Fall Limited Edition<br>Sneakers</h2>
+      <p class="text-darkGrayishBlue mb-6">
         These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
-
-      <div>
-        <div>
-          <p>$125.00<span>50%</span></p>
+      <div class="">
+        <div class="flex gap-8">
+          <p class="font-bold text-2xl">$125.00</p>
+          <p class="">50%</p>
         </div>
-        <p>$250.00</p>
+        <p class="">$250.00</p>
       </div>
 
-      <div>
-        <div>
-          <p>0</p>
+      <div class="">
+        <div class="">
+          <p class="">0</p>
         </div>
         <a href="#">Add to cart</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/KendiHashimoto">Kendi Hashimoto</a>.
+  <footer class="fixed left-0 bottom-0 w-full text-center">
+    Challenge by <a class="text-orange underline font-bold" href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend Mentor</a>.
+
+    Coded by <a class="text-orange underline font-bold" href="https://github.com/KendiHashimoto" target="_blank">Kendi
+      Hashimoto</a>.
   </footer>
 
   <!-- SCRIPTS -->

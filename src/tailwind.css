@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 @layer components {
-  .header {
+  .navbar {
     @apply grid grid-cols-navbar
-    mx-48 my-7 gap-8 items-center;
+    mx-48 my-7 gap-6 items-center;
+  }
+
+  .link {
+    @apply text-darkGrayishBlue hover:text-black relative;
+  }
+
+  .avatar {
+    @apply w-12 cursor-pointer 
+    hover:outline outline-8 outline-orange rounded-full;
+  }
+
+  .thumbnail-container {
+    @apply w-[13.8%] cursor-pointer 
+    hover:outline outline-[3px] outline-orange rounded-xl;
+  }
+
+  .thumbnail {
+    @apply rounded-xl hover:opacity-40;
   }
 }
