@@ -14,15 +14,30 @@
 
   .avatar {
     @apply w-12 cursor-pointer 
-    hover:outline outline-8 outline-orange rounded-full;
+    hover:outline outline-2 outline-orange rounded-full;
   }
 
   .thumbnail-container {
-    @apply w-[13.8%] cursor-pointer 
-    hover:outline outline-[3px] outline-orange rounded-xl;
+    @apply w-[13.8%] cursor-pointer rounded-lg
+    hover:outline outline-[3px] outline-orange;
   }
 
   .thumbnail {
-    @apply rounded-xl hover:opacity-40;
+    @apply rounded-lg hover:opacity-40;
+  }
+
+  .fifty-percent {
+    @apply py-[2px] px-[10px] self-center rounded-md 
+    text-base font-bold bg-paleOrange text-orange;
+  }
+
+  .math-icon { 
+    @apply p-4 text-orange hover:text-lightOrange;
+  }
+
+  .addToCart-button {
+    @apply flex rounded-lg w-72 h-14 justify-center 
+    bg-orange shadow-addToCart shadow-orange
+    hover:bg-lightOrange;
   }
 }

@@ -10,6 +10,7 @@ module.exports = {
     },
     colors: {
       orange: "hsl(26, 100%, 55%)",
+      lightOrange: "hsl(26, 100%, 75%)",
       paleOrange: "hsl(25, 100%, 94%)",
       veryDarkBlue: "hsl(220, 13%, 13%)",
       darkGrayishBlue: "hsl(219, 9%, 45%)",
@@ -21,8 +22,12 @@ module.exports = {
       gridTemplateColumns: {
         navbar: "1fr 6fr 1fr",
       },
+      boxShadow: {
+        addToCart: "0 15px 50px -10px rgba(0, 0, 0, 0.3)",
+      },
       spacing: {
         logo: "140px",
+        bigSneakerImg: "70%"
       },
     },
   },
