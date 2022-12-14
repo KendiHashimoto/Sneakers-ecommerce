@@ -3,10 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      mobile: "375px",
-      tablet: "768px",
-      laptop: "976px",
+      mobile: "480px",
+      tablet: "1200px",
       desktop: "1440px",
+      bigDesktop: "1980px",
     },
     colors: {
       orange: "hsl(26, 100%, 55%)",
@@ -20,14 +20,14 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        navbar: "1fr 6fr 1fr",
+        desktopNavbar: "1fr 6fr 1fr",
+        mobileNavbar: "2fr 2fr",
       },
       boxShadow: {
         addToCart: "0 15px 50px -10px rgba(0, 0, 0, 0.3)",
       },
       spacing: {
-        logo: "140px",
-        bigSneakerImg: "70%"
+        logo: "160px",
       },
     },
   },

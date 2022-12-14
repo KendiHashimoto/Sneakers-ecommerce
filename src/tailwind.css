@@ -4,40 +4,79 @@
 
 @layer components {
   .navbar {
-    @apply grid grid-cols-navbar
-    mx-48 my-7 gap-6 items-center;
+    @apply grid grid-cols-desktopNavbar
+    mx-48 my-7 gap-6 items-center
+    max-tablet:mx-8 max-tablet:mb-6 max-tablet:grid-cols-mobileNavbar;
   }
 
   .link {
     @apply text-darkGrayishBlue hover:text-black relative;
   }
 
+  .cart-icon {
+    @apply w-5 h-5 self-center cursor-pointer mr-10
+    max-tablet:mr-6 max-tablet:w-[25px] max-tablet:h-[25px];
+  }
+
   .avatar {
     @apply w-12 cursor-pointer 
-    hover:outline outline-2 outline-orange rounded-full;
+    hover:outline outline-2 outline-orange rounded-full
+    max-tablet:w-7;
+  }
+
+  .main-container {
+    @apply grid grid-cols-2 mx-56 gap-10 
+    max-tablet:grid-cols-1 max-tablet:mx-0 max-tablet:gap-0;
+  }
+
+  .bigSneaker-container {
+    @apply mb-8 w-[25rem] 
+    max-desktop:w-[20rem]
+    max-bigDesktop:self-center max-tablet:w-screen;
   }
 
   .thumbnail-container {
-    @apply w-[13.8%] cursor-pointer rounded-lg
-    hover:outline outline-[3px] outline-orange;
+    @apply w-[4.95rem] cursor-pointer rounded-lg
+    hover:outline outline-[3px] outline-orange
+    max-desktop:w-[3.7rem]
+    max-tablet:hidden;
   }
 
-  .thumbnail {
-    @apply rounded-lg hover:opacity-40;
+  .info-container {
+    @apply flex flex-col justify-center max-desktop:justify-start
+    max-tablet:mx-8;
+  }
+
+  .sneakers-title {
+    @apply mb-6 font-bold text-[45px] leading-[50px] 
+    max-desktop:text-[35px] max-desktop:leading-[40px]
+    max-tablet:text-[30px] max-tablet:leading-[30px];
   }
 
   .fifty-percent {
     @apply py-[2px] px-[10px] self-center rounded-md 
-    text-base font-bold bg-paleOrange text-orange;
+    text-base font-bold bg-paleOrange text-orange
+    max-desktop:text-[13px] max-desktop:py-[1px] max-desktop:px-[8px];
   }
 
-  .math-icon { 
+  .twoHundredAndFiftyDollars {
+    @apply line-through text-darkGrayishBlue font-bold opacity-50 max-tablet:self-center;
+  }
+
+  .mathButtons-container {
+    @apply flex justify-between bg-lightGrayishBlue rounded-lg gap-x-6 w-40 h-14
+    max-desktop:w-32 max-desktop:gap-x-2
+    max-tablet:w-full;
+  }
+
+  .math-icon {
     @apply p-4 text-orange hover:text-lightOrange;
   }
 
   .addToCart-button {
     @apply flex rounded-lg w-72 h-14 justify-center 
-    bg-orange shadow-addToCart shadow-orange
-    hover:bg-lightOrange;
+    bg-orange shadow-addToCart shadow-orange hover:bg-lightOrange 
+    max-desktop:w-52
+    max-tablet:w-full max-tablet:mb-32;
   }
 }

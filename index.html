@@ -15,15 +15,18 @@
 <body>
 
   <!-- NAVBAR -->
-  <header class="mb-20">
+  <header class="mb-20 max-tablet:mb-0">
     <div class="navbar">
-      <div class="w-logo">
-        <img class="cursor-pointer" src="assets/images/logo.svg" alt="Sneakers logo">
+
+      <div class="flex gap-4">
+        <img class="w-4 h-4 mt-1 content-center hidden max-tablet:block" src="assets/images/icons/icon-menu.svg"
+          alt="Hamburger menu icon">
+        <img class="cursor-pointer w-logo" src="assets/images/logo.svg" alt="Sneakers logo">
       </div>
 
-      <div class="h-2/4 mx-10">
+      <div class="h-2/4 mx-10 max-tablet:hidden">
         <nav>
-          <ul class="flex gap-8">
+          <ul class="flex gap-8 max-desktop:gap-5">
             <li class="link"><a href="#">Collections</a></li>
             <li class="link"><a href="#">Men</a></li>
             <li class="link"><a href="#">Women</a></li>
@@ -34,66 +37,70 @@
       </div>
 
       <div class="flex justify-end">
-        <img class="w-5 h-5 self-center cursor-pointer mr-10" src="assets/images/icons/icon-cart.svg" alt="Cart icon">
+        <img class="cart-icon" src="assets/images/icons/icon-cart.svg" alt="Cart icon">
         <img class="avatar" src="assets/images/image-avatar.png" alt="User avatar">
       </div>
     </div>
 
-    <div class="border mx-48 opacity-[0.06]"></div>
+    <div class="border mx-48 opacity-[0.06] max-tablet:hidden"></div>
   </header>
 
-  <main class="grid grid-cols-2 mx-60">
+  <main class="main-container">
 
     <!-- SNEAKERS CONTAINER -->
     <section class="flex flex-col">
-      <div class="self-center mb-8 w-bigSneakerImg">
-        <img class="rounded-xl" src="assets/images/sneakers/image-product-1.jpg" alt="Sneaker first image">
+      <div class="bigSneaker-container">
+        <img class="rounded-xl max-tablet:w-screen max-tablet:rounded-none"
+          src="assets/images/sneakers/image-product-1.jpg" alt="Sneaker first image">
       </div>
 
-      <div class="flex justify-center gap-5">
+      <div class="flex gap-7 max-bigDesktop:justify-center">
         <div class="thumbnail-container">
-          <img class="thumbnail" src="assets/images/sneakers/image-product-1-thumbnail.jpg" alt="Sneaker first image">
+          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-1-thumbnail.jpg"
+            alt="Sneaker first image">
         </div>
         <div class="thumbnail-container">
-          <img class="thumbnail" src="assets/images/sneakers/image-product-2-thumbnail.jpg" alt="Sneaker second image">
+          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-2-thumbnail.jpg"
+            alt="Sneaker second image">
         </div>
         <div class="thumbnail-container">
-          <img class="thumbnail" src="assets/images/sneakers/image-product-3-thumbnail.jpg" alt="Sneaker third image">
+          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-3-thumbnail.jpg"
+            alt="Sneaker third image">
         </div>
         <div class="thumbnail-container">
-          <img class="thumbnail" src="assets/images/sneakers/image-product-4-thumbnail.jpg" alt="Sneaker fourth image">
+          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-4-thumbnail.jpg"
+            alt="Sneaker fourth image">
         </div>
       </div>
     </section>
 
-    <!-- SNEAKERS INFO CONTAINER -->
-    <section class="flex flex-col justify-center">
+    <!-- INFO CONTAINER -->
+    <section class="info-container">
       <h1 class="mb-4 uppercase text-xs text-orange font-semibold tracking-widest">Sneaker Company</h1>
 
-      <h2 class="mb-10 font-bold text-5xl">Fall Limited Edition <br> Sneakers</h2>
+      <h2 class="sneakers-title">Fall Limited Edition <br> Sneakers</h2>
 
-      <p class="text-darkGrayishBlue mb-6 w-4/5">
+      <p class="text-darkGrayishBlue mb-6">
         These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
 
-      <div class="mb-8">
+      <div class="mb-8 max-tablet:flex max-tablet:justify-between">
         <div class="flex gap-4">
-          <p class="font-bold text-3xl mb-1">$125.00</p>
+          <p class="font-bold text-3xl mb-1 max-desktop:text-2xl">$125.00</p>
           <p class="fifty-percent">50%</p>
         </div>
-        <p class="line-through text-darkGrayishBlue font-bold opacity-50">$250.00</p>
+        <p class="twoHundredAndFiftyDollars">$250.00</p>
       </div>
 
-      <div class="flex gap-4">
-
-        <div class="flex bg-lightGrayishBlue rounded-lg gap-x-6 w-30 h-14">
-          <button class="cursor-pointer self-center w-full">
-            <i class="fa-sharp fa-solid fa-minus math-icon"></i>
+      <div class="flex gap-4 max-tablet:flex-col">
+        <div class="mathButtons-container">
+          <button class="cursor-pointer">
+            <i class="math-icon fa-sharp fa-solid fa-minus"></i>
           </button>
-          <p class="font-bold self-center">0</p>
-          <button class="cursor-pointer self-center w-full">
-            <i class="fa-sharp fa-solid fa-plus math-icon"></i>
+          <p class="font-bold self-center"><span>0</span></p>
+          <button class="cursor-pointer">
+            <i class="math-icon fa-sharp fa-solid fa-plus"></i>
           </button>
         </div>
 
@@ -109,10 +116,9 @@
     </section>
   </main>
 
-  <footer class="fixed left-0 bottom-0 w-full text-center">
+  <footer class="fixed left-0 bottom-0 w-full text-center max-tablet:text-xs">
     Challenge by <a class="text-orange underline font-bold" href="https://www.frontendmentor.io?ref=challenge"
       target="_blank">Frontend Mentor</a>.
-
     Coded by <a class="text-orange underline font-bold" href="https://github.com/KendiHashimoto" target="_blank">Kendi
       Hashimoto</a>.
   </footer>
