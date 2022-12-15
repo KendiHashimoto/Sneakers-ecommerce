@@ -19,7 +19,7 @@
     <div class="navbar">
 
       <div class="flex gap-4">
-        <img class="w-4 h-4 mt-1 content-center hidden max-tablet:block" src="assets/images/icons/icon-menu.svg"
+        <img class="hamburger-menu" src="assets/images/icons/icon-menu.svg"
           alt="Hamburger menu icon">
         <img class="cursor-pointer w-logo" src="assets/images/logo.svg" alt="Sneakers logo">
       </div>
@@ -37,12 +37,14 @@
       </div>
 
       <div class="flex justify-end">
-        <img class="cart-icon" src="assets/images/icons/icon-cart.svg" alt="Cart icon">
+        <img class="inactive-cart-icon" src="assets/images/icons/icon-cart-inactive copy.svg" alt="Inactive cart icon">
         <img class="avatar" src="assets/images/image-avatar.png" alt="User avatar">
       </div>
     </div>
 
     <div class="border mx-48 opacity-[0.06] max-tablet:hidden"></div>
+
+    <div class="cart-modal hidden"></div>
   </header>
 
   <main class="main-container">
@@ -98,14 +100,14 @@
           <button class="cursor-pointer">
             <i class="math-icon fa-sharp fa-solid fa-minus"></i>
           </button>
-          <p class="font-bold self-center"><span>0</span></p>
+          <p class="font-bold self-center"><span class="sneakers-number">0</span></p>
           <button class="cursor-pointer">
             <i class="math-icon fa-sharp fa-solid fa-plus"></i>
           </button>
         </div>
 
         <div>
-          <a class="addToCart-button" href="#">
+          <a class="addToCart-button">
             <img class="self-center w-5 h-5 mr-4 cursor-pointer" src="assets/images/icons/icon-add-cart.svg"
               alt="Cart icon">
             <span class="self-center text-white font-semibold">Add to cart</span>
