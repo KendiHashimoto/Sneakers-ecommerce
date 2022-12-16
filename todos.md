@@ -1,0 +1,5 @@
+- [] Cart modal
+- [] Burger menu
+- [] Dynamic sneakers numbers
+- [] Sneakers numbers in cart modal
+- [] Modal images

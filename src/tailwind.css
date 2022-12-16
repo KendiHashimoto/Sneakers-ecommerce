@@ -28,6 +28,17 @@
     max-tablet:w-7;
   }
 
+  .cart-container {
+    @apply absolute right-24 top-24 h-64 w-96 
+    rounded-xl shadow-2xl bg-white;
+  }
+
+  .checkout-button {
+    @apply flex justify-center items-center 
+    h-14 bg-orange mx-8 rounded-lg cursor-pointer
+    ;
+  }
+
   .main-container {
     @apply grid grid-cols-2 mx-56 gap-10 
     max-tablet:grid-cols-1 max-tablet:mx-0 max-tablet:gap-0;

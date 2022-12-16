@@ -19,8 +19,7 @@
     <div class="navbar">
 
       <div class="flex gap-4">
-        <img class="hamburger-menu" src="assets/images/icons/icon-menu.svg"
-          alt="Hamburger menu icon">
+        <img class="hamburger-menu" src="assets/images/icons/icon-menu.svg" alt="Hamburger menu icon">
         <img class="cursor-pointer w-logo" src="assets/images/logo.svg" alt="Sneakers logo">
       </div>
 
@@ -42,9 +41,42 @@
       </div>
     </div>
 
-    <div class="border mx-48 opacity-[0.06] max-tablet:hidden"></div>
+    <!-- NAV BORDER -->
+    <div class="border mx-48 opacity-[0.09] max-tablet:hidden"></div>
 
-    <div class="cart-modal hidden"></div>
+    <!-- CART -->
+    <div class="cart-container">
+      <div class="flex h-16 rounded-t-xl">
+        <p class="font-bold self-center ml-5">Cart</p>
+      </div>
+
+      <div class="border opacity-[0.09]"></div>
+
+      <!-- EMPTY -->
+      <div class="h-[205px] flex justify-center items-center hidden">
+        <p class="font-bold text-darkGrayishBlue text-base">Your cart is empty</p>
+      </div>
+
+      <!-- FILLED -->
+      <div class="pt-6">
+        <div class="flex justify-evenly pb-5">
+          <img class="w-16 rounded-md" src="assets/images/sneakers/image-product-1-thumbnail.jpg"
+            alt="Cart sneaker image">
+          <div class="text-darkGrayishBlue font-medium self-center">
+            <p>Fall limited edition sneakers</p>
+            <p>125.00 x
+              <span class="sneakers-number-cart"></span>
+              <span class="total-sneakers font-bold text-black">$</span>
+            </p>
+          </div>
+          <img class="h-5 w-4 self-center cursor-pointer" src="assets/images/icons/icon-delete.svg" alt="Trash icon">
+        </div>
+
+        <div class="checkout-button">
+          <a class="font-bold text-white" href="#">Checkout</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main class="main-container">
