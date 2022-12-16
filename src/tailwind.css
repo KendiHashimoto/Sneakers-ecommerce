@@ -29,14 +29,16 @@
   }
 
   .cart-container {
-    @apply absolute right-24 top-24 h-64 w-96 
-    rounded-xl shadow-2xl bg-white;
+    @apply hidden absolute right-24 top-24 h-64 w-96 
+    rounded-xl shadow-2xl bg-white
+    max-tablet:top-[96px] max-tablet:w-[95.5%]
+    max-tablet:left-2;
   }
 
   .checkout-button {
     @apply flex justify-center items-center 
-    h-14 bg-orange mx-8 rounded-lg cursor-pointer
-    ;
+    h-14 mx-8 rounded-lg cursor-pointer
+    bg-orange shadow-orange hover:bg-lightOrange;
   }
 
   .main-container {
