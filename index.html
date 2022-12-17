@@ -12,18 +12,35 @@
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
 
-<body>
+<body class="">
 
   <!-- NAVBAR -->
   <header class="mb-20 max-tablet:mb-0">
     <div class="navbar">
 
       <div class="flex gap-4">
-        <img class="hamburger-menu" src="assets/images/icons/icon-menu.svg" alt="Hamburger menu icon">
+
+        <!-- BURGER MENU -->
+        <img class="hamburger-icon w-4 h-4 mt-1 content-center hidden max-tablet:block"
+          src="assets/images/icons/icon-menu.svg" alt="Hamburger menu icon">
+        <div class="hamburger-menu">
+          <img class="close-icon mb-12" src="assets/images/icons/icon-close.svg" alt="Close icon">
+          <nav>
+            <ul>
+              <li class="hamburger-links">Collections</li>
+              <li class="hamburger-links">Men</li>
+              <li class="hamburger-links">Women</li>
+              <li class="hamburger-links">About</li>
+              <li class="hamburger-links">Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <!-- ----------- -->
+
         <img class="cursor-pointer w-logo" src="assets/images/logo.svg" alt="Sneakers logo">
       </div>
 
-      <div class="h-2/4 mx-10 max-tablet:hidden">
+      <div class="mx-10 h-2/4 max-tablet:hidden">
         <nav>
           <ul class="flex gap-8 max-desktop:gap-5">
             <li class="link"><a href="#">Collections</a></li>
@@ -36,7 +53,7 @@
       </div>
 
       <div class="flex justify-end">
-        <img class="inactive-cart-icon" src="assets/images/icons/icon-cart-inactive copy.svg" alt="Inactive cart icon">
+        <img class="cart-icon" src="assets/images/icons/icon-cart-inactive copy.svg" alt="Inactive cart icon">
         <img class="avatar" src="assets/images/image-avatar.png" alt="User avatar">
       </div>
     </div>
@@ -53,12 +70,12 @@
       <div class="border opacity-[0.09]"></div>
 
       <!-- EMPTY -->
-      <div class="h-[205px] flex justify-center items-center">
+      <div class="empty-cart">
         <p class="font-bold text-darkGrayishBlue text-base">Your cart is empty</p>
       </div>
 
       <!-- FILLED -->
-      <div class="pt-6 hidden">
+      <div class="filled-cart">
         <div class="flex justify-evenly pb-5 max-tablet:justify-between max-tablet:mx-7">
           <img class="w-16 rounded-md" src="assets/images/sneakers/image-product-1-thumbnail.jpg"
             alt="Cart sneaker image">
@@ -69,7 +86,7 @@
               <span class="total-sneakers font-bold text-black">$</span>
             </p>
           </div>
-          <img class="h-5 w-4 self-center cursor-pointer" src="assets/images/icons/icon-delete.svg" alt="Trash icon">
+          <img class="trash-icon h-5 w-4 self-center cursor-pointer" src="assets/images/icons/icon-delete.svg" alt="Trash icon">
         </div>
 
         <div class="checkout-button">

@@ -10,22 +10,25 @@
   }
 
   .hamburger-menu {
-    @apply w-4 h-4 mt-1 content-center hidden max-tablet:block;
+    @apply hidden;
+  }
+
+  .active-burger-menu {
+    @apply block fixed bg-white h-[1400px] w-3/5 left-0 top-0
+    p-7 shadow-2xl transition-all;
+  }
+
+  .hamburger-links {
+    @apply font-bold mb-6 text-xl;
   }
 
   .link {
     @apply text-darkGrayishBlue hover:text-black relative;
   }
 
-  .inactive-cart-icon {
+  .cart-icon {
     @apply w-5 h-5 self-center cursor-pointer mr-10
     max-tablet:mr-6 max-tablet:w-[25px] max-tablet:h-[25px];
-  }
-
-  .avatar {
-    @apply w-12 cursor-pointer 
-    hover:outline outline-2 outline-orange rounded-full
-    max-tablet:w-7;
   }
 
   .cart-container {
@@ -33,6 +36,32 @@
     rounded-xl shadow-2xl bg-white
     max-tablet:top-[96px] max-tablet:w-[95.5%]
     max-tablet:left-2;
+  }
+
+  .active-cart-container {
+    @apply block;
+  }
+
+  .empty-cart {
+    @apply h-[205px] flex justify-center items-center;    
+  }
+
+  .inactive-empty-cart {
+    @apply hidden;
+  }
+
+  .filled-cart {
+    @apply pt-6 hidden;
+  }
+
+  .active-filled-cart {
+    @apply block;
+  }
+
+  .avatar {
+    @apply w-12 cursor-pointer 
+    hover:outline outline-2 outline-orange rounded-full
+    max-tablet:w-7;
   }
 
   .checkout-button {

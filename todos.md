@@ -1,6 +1,6 @@
-- [x] Cart modal
+- [] Cart modal
 - [] Burger menu
 - [] Dynamic sneakers numbers
 - [] Sneakers numbers in cart modal
 - [] Sneakers numbers in cart icon
-- [] Modal images
+- [] Lightbox images
