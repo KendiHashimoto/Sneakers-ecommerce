@@ -53,7 +53,8 @@
       </div>
 
       <div class="flex justify-end">
-        <img class="cart-icon" src="assets/images/icons/icon-cart-inactive copy.svg" alt="Inactive cart icon">
+        <div class="cart-indicator"></div>
+        <img class="cart-icon" src="assets/images/icons/icon-cart-inactive copy.svg" alt="Cart icon">
         <img class="avatar" src="assets/images/image-avatar.png" alt="User avatar">
       </div>
     </div>
@@ -83,10 +84,11 @@
             <p>Fall limited edition sneakers</p>
             <p>125.00 x
               <span class="sneakers-number-cart"></span>
-              <span class="total-sneakers font-bold text-black">$</span>
+              <span class="total-sneakers font-bold text-black"></span>
             </p>
           </div>
-          <img class="trash-icon h-5 w-4 self-center cursor-pointer" src="assets/images/icons/icon-delete.svg" alt="Trash icon">
+          <img class="trash-icon h-5 w-4 self-center cursor-pointer" src="assets/images/icons/icon-delete.svg"
+            alt="Trash icon">
         </div>
 
         <div class="checkout-button">
@@ -101,26 +103,36 @@
     <!-- SNEAKERS CONTAINER -->
     <section class="flex flex-col">
       <div class="bigSneaker-container">
-        <img class="rounded-xl max-tablet:w-screen max-tablet:rounded-none"
-          src="assets/images/sneakers/image-product-1.jpg" alt="Sneaker first image">
+        <a data-fslightbox href="assets/images/sneakers/image-product-1.jpg">
+          <img class="rounded-xl max-tablet:w-screen max-tablet:rounded-none"
+            src="assets/images/sneakers/image-product-1.jpg" alt="Sneaker first image">
+        </a>
       </div>
 
       <div class="flex gap-7 max-bigDesktop:justify-center">
         <div class="thumbnail-container">
-          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-1-thumbnail.jpg"
-            alt="Sneaker first image">
+          <a data-fslightbox href="assets/images/sneakers/image-product-1-thumbnail.jpg">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-1-thumbnail.jpg"
+              alt="Sneaker first image">
+          </a>
         </div>
         <div class="thumbnail-container">
-          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-2-thumbnail.jpg"
-            alt="Sneaker second image">
+          <a data-fslightbox href="assets/images/sneakers/image-product-2-thumbnail.jpg">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-2-thumbnail.jpg"
+              alt="Sneaker second image">
+          </a>
         </div>
         <div class="thumbnail-container">
-          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-3-thumbnail.jpg"
-            alt="Sneaker third image">
+          <a data-fslightbox href="assets/images/sneakers/image-product-3-thumbnail.jpg">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-3-thumbnail.jpg"
+              alt="Sneaker third image">
+          </a>
         </div>
         <div class="thumbnail-container">
-          <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-4-thumbnail.jpg"
-            alt="Sneaker fourth image">
+          <a data-fslightbox href="assets/images/sneakers/image-product-4-thumbnail.jpg">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-4-thumbnail.jpg"
+              alt="Sneaker fourth image">
+          </a>
         </div>
       </div>
     </section>
@@ -176,6 +188,7 @@
 
   <!-- SCRIPTS -->
   <script type="module" src="src/main.js"></script>
+  <script src="src/fslightbox-basic-3.3.1/fslightbox.js"></script>
   <script src="https://kit.fontawesome.com/2196e33625.js" crossorigin="anonymous"></script>
 </body>
 

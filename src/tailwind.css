@@ -15,7 +15,7 @@
 
   .active-burger-menu {
     @apply block fixed bg-white h-[1400px] w-3/5 left-0 top-0
-    p-7 shadow-2xl transition-all;
+    p-7 shadow-2xl;
   }
 
   .hamburger-links {
@@ -24,6 +24,17 @@
 
   .link {
     @apply text-darkGrayishBlue hover:text-black relative;
+  }
+
+  .cart-indicator {
+    @apply hidden;
+  }
+
+  .active-cart-indicator {
+    @apply absolute right-[17rem] top-[2.1rem]
+    text-[11.5px] h-4 w-5 
+    rounded-full bg-orange text-white font-bold flex justify-center items-center
+    max-tablet:right-[4.8rem] max-tablet:top-[1.4rem];
   }
 
   .cart-icon {
@@ -43,7 +54,7 @@
   }
 
   .empty-cart {
-    @apply h-[205px] flex justify-center items-center;    
+    @apply h-[205px] flex justify-center items-center;
   }
 
   .inactive-empty-cart {

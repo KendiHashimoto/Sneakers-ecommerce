@@ -25,3 +25,22 @@ li:after {
 li:hover:after {
   width: 100%;
 }
+
+.active-burger-menu::after {
+  content: "";
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 60%;
+  top: 0;
+}
+
+.fslightbox-slide-btn svg {
+  display: none;
+}
+
+.fslightbox-source {
+  height: 10px;
+  border-radius: 15px;
+}
