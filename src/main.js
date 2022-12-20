@@ -99,11 +99,13 @@ closeBurgerMenuBtn.addEventListener("click", () => {
 const thumbnails = document.querySelectorAll(".thumbnail-container")
 const bigSneakerContainer = document.querySelector(".bigSneaker-container")
 
-const lightboxBtn = document.querySelector(".fslight-box-slide-btn")
+const lightboxBtn = document.querySelectorAll(".fslightbox-slide-btn")
 thumbnails.forEach((e) => {
   e.addEventListener("click", () => {
-    lightboxBtn.innerText = "josefins"
+    lightboxBtn.innerHTML = "josefins"
   })
 })
 
-bigSneakerContainer.addEventListener("click", () => {})
+bigSneakerContainer.addEventListener("click", () => {
+  lightboxBtn.innerHTML = "josefins"
+})

@@ -36,8 +36,30 @@ li:hover:after {
   top: 0;
 }
 
+/* LIGHTBOX */
+.fslightbox-source {
+  width: 37rem !important;
+  height: 37rem !important;
+}
+
+.fslightbox-slide-btn-container-previous {
+  left: 35.6rem; 
+}
+
+.fslightbox-slide-btn-container-next {
+  right: 35.6rem; 
+}
+
 .fslightbox-slide-btn svg {
   display: none;
+}
+
+.fslightbox-slide-btn {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+
 }
 
 .fslightbox-source {
