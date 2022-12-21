@@ -37,21 +37,37 @@ li:hover:after {
 }
 
 /* LIGHTBOX */
+.fslightbox-toolbar {
+  top: 80%;
+  right: 2%;
+  background: none;
+}
+
+.fslightbox-slide-number-container {
+  display: none !important;
+}
+
+.fslightbox-toolbar-button:nth-child(1) {
+  display: none;
+}
+
+.fslightbox-container * {
+  display: flex;
+  justify-content: center;
+}
+
 .fslightbox-source {
-  width: 37rem !important;
-  height: 37rem !important;
+  width: 65% !important;
+  height: 65% !important;
+  border-radius: 15px;
 }
 
 .fslightbox-slide-btn-container-previous {
-  left: 35.6rem; 
+  right: 36.8rem;
 }
 
 .fslightbox-slide-btn-container-next {
-  right: 35.6rem; 
-}
-
-.fslightbox-slide-btn svg {
-  display: none;
+  left: 36.8rem;
 }
 
 .fslightbox-slide-btn {
@@ -59,10 +75,34 @@ li:hover:after {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-
 }
 
-.fslightbox-source {
-  height: 10px;
-  border-radius: 15px;
+.fslightbox-toolbar-button svg {
+  width: 35px;
+  height: 35px;
+}
+
+.fslightbox-toolbar-button .fslightbox-svg-path {
+  fill: orange !important;
+}
+
+@media (max-width: 1200px) {
+  .fslightbox-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fslightbox-slide-btn {
+    height: 50px;
+    width: 50px;
+  }
+
+  .fslightbox-slide-btn-container-previous {
+    right: 62%;
+  }
+
+  .fslightbox-slide-btn-container-next {
+    left: 62%;
+  }
 }

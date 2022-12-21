@@ -79,8 +79,12 @@ removeSneakerBtn.addEventListener("click", () => {
 })
 
 addToCartBtn.addEventListener("click", () => {
-  addToCart()
-  cartStatus()
+  if (sneakersNumber.textContent === "0") {
+    return
+  } else {
+    addToCart()
+    cartStatus()
+  }
 })
 
 removeSneakersFromCartBtn.addEventListener("click", () => {
@@ -98,14 +102,21 @@ closeBurgerMenuBtn.addEventListener("click", () => {
 // LIGHTBOXES
 const thumbnails = document.querySelectorAll(".thumbnail-container")
 const bigSneakerContainer = document.querySelector(".bigSneaker-container")
+const ligthboxThumbnails = document.querySelector(".fslightbox-fade-in-strong")
 
-const lightboxBtn = document.querySelectorAll(".fslightbox-slide-btn")
+const renderThumbnails = () => {
+  const img = document.createElement("img")
+  img.src =
+    "../assets/images/sneakers/image-product-1.jpg"
+  ligthboxThumbnails.appendChild(img)
+}
+
 thumbnails.forEach((e) => {
   e.addEventListener("click", () => {
-    lightboxBtn.innerHTML = "josefins"
+    renderThumbnails()
   })
 })
 
 bigSneakerContainer.addEventListener("click", () => {
-  lightboxBtn.innerHTML = "josefins"
+  renderThumbnails()
 })
