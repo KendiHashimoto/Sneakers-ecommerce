@@ -89,7 +89,21 @@
   .bigSneaker-container {
     @apply mb-8 w-[25rem] cursor-pointer
     max-desktop:w-[20rem]
-    max-bigDesktop:self-center max-tablet:w-screen;
+    max-bigDesktop:self-center 
+    max-tablet:w-screen;
+  }
+
+  .bigSneaker-img {
+    @apply rounded-xl 
+    max-tablet:w-screen max-tablet:rounded-none;
+  }
+
+  .active {
+    @apply block;
+  }
+
+  .inactive {
+    @apply hidden;
   }
 
   .thumbnail-container {
@@ -135,5 +149,11 @@
     bg-orange shadow-addToCart shadow-orange hover:bg-lightOrange 
     max-desktop:w-52
     max-tablet:w-full max-tablet:mb-32;
+  }
+
+  .mobileLightboxButtons {
+    @apply hidden absolute bg-white w-10 h-10 rounded-[50%]
+    max-tablet:top-[40%] max-tablet:flex justify-center items-center
+    max-mobile:top-[30%];
   }
 }

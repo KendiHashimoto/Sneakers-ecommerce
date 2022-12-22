@@ -1,6 +1,0 @@
-- [x] Cart modal
-- [x] Burger menu
-- [x] Dynamic sneakers numbers
-- [x] Sneakers numbers in cart modal
-- [x] Sneakers numbers in cart icon
-- [] Lightbox images

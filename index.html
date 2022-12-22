@@ -100,15 +100,28 @@
 
   <main class="main-container">
 
-    <!-- SNEAKERS CONTAINER -->
+    <!-- BIG SNEAKER IMAGES -->
     <section class="flex flex-col">
       <div class="bigSneaker-container">
         <a data-fslightbox href="assets/images/sneakers/image-product-1.jpg">
-          <img class="rounded-xl max-tablet:w-screen max-tablet:rounded-none"
+          <button class="mobileLightboxButtons previousLightboxBtn left-[4%]">
+            <img src="assets/images/icons/icon-previous.svg" alt="Previous icon"></button>
+
+          <img class="bigSneaker-img active"
             src="assets/images/sneakers/image-product-1.jpg" alt="Sneaker first image">
+          <img class="bigSneaker-img inactive"
+            src="assets/images/sneakers/image-product-2.jpg" alt="Sneaker second image">
+          <img class="bigSneaker-img inactive"
+            src="assets/images/sneakers/image-product-3.jpg" alt="Sneaker third image">
+          <img class="bigSneaker-img inactive"
+            src="assets/images/sneakers/image-product-4.jpg" alt="Sneaker fourth image">
+
+          <button class="mobileLightboxButtons nextLightboxBtn right-[4%]">
+            <img src="assets/images/icons/icon-next.svg" alt="Next icon"></button>
         </a>
       </div>
 
+      <!-- THUMBNAILS -->
       <div class="flex gap-7 max-bigDesktop:justify-center">
         <div class="thumbnail-container">
           <a data-fslightbox href="assets/images/sneakers/image-product-1.jpg">

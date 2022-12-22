@@ -11,6 +11,7 @@ p {
   font-size: 16px;
 }
 
+/* NAVBAR */
 li:after {
   content: " ";
   width: 0%;
@@ -87,6 +88,10 @@ li:hover:after {
 }
 
 @media (max-width: 1200px) {
+  body {
+    margin-right: 0px !important;
+  }
+
   .fslightbox-container {
     display: none;
   }

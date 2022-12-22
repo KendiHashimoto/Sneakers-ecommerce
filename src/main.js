@@ -100,23 +100,39 @@ closeBurgerMenuBtn.addEventListener("click", () => {
 })
 
 // LIGHTBOXES
-const thumbnails = document.querySelectorAll(".thumbnail-container")
-const bigSneakerContainer = document.querySelector(".bigSneaker-container")
-const ligthboxThumbnails = document.querySelector(".fslightbox-fade-in-strong")
+const previousLightboxBtn = document.querySelector(".previousLightboxBtn")
+const nextLightboxBtn = document.querySelector(".nextLightboxBtn")
 
-const renderThumbnails = () => {
-  const img = document.createElement("img")
-  img.src =
-    "../assets/images/sneakers/image-product-1.jpg"
-  ligthboxThumbnails.appendChild(img)
+const imagesContainer = document.querySelector(".bigSneaker-container")
+const images = imagesContainer.getElementsByClassName("bigSneaker-img")
+let currentIndex = 0
+
+const previousPicture = () => {
+  images[currentIndex].classList.remove("active")
+  images[currentIndex].classList.add("inactive")
+
+  currentIndex = (currentIndex - 1 + images.length) % images.length
+
+  images[currentIndex].classList.remove("inactive")
+  images[currentIndex].classList.add("active")
 }
 
-thumbnails.forEach((e) => {
-  e.addEventListener("click", () => {
-    renderThumbnails()
-  })
+const nextPicture = () => {
+  images[currentIndex].classList.remove("active")
+  images[currentIndex].classList.add("inactive")
+
+  // Incrementa o índice da imagem atual
+  currentIndex = (currentIndex + 1) % images.length
+
+  images[currentIndex].classList.remove("inactive")
+  images[currentIndex].classList.add("active")
+}
+
+// EVENTS
+previousLightboxBtn.addEventListener("click", () => {
+  previousPicture()
 })
 
-bigSneakerContainer.addEventListener("click", () => {
-  renderThumbnails()
+nextLightboxBtn.addEventListener("click", () => {
+  nextPicture()
 })
