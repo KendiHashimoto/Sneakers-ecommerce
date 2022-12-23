@@ -80,7 +80,7 @@ removeSneakerBtn.addEventListener("click", () => {
 
 addToCartBtn.addEventListener("click", () => {
   if (sneakersNumber.textContent === "0") {
-    return
+    clearCart()
   } else {
     addToCart()
     cartStatus()
