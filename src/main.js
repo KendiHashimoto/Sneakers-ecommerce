@@ -1,4 +1,5 @@
 import "./tailwind.css"
+import "./style.css"
 
 const openBurgerMenuBtn = document.querySelector(".hamburger-icon")
 const hamburgerMenu = document.querySelector(".hamburger-menu")
