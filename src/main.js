@@ -1,5 +1,4 @@
 import "./tailwind.css"
-require("fslightbox")
 
 const openBurgerMenuBtn = document.querySelector(".hamburger-icon")
 const hamburgerMenu = document.querySelector(".hamburger-menu")
