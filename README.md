@@ -8,6 +8,7 @@
 - [👟 Frontend Mentor - E-commerce product page solution](#-frontend-mentor---e-commerce-product-page-solution)
   - [📝 Table of contents](#-table-of-contents)
   - [👀 Overview](#-overview)
+    - [⌚️ Status](#️-status)
     - [💻 The Project](#-the-project)
     - [🥷 The challenge](#-the-challenge)
     - [🖇 Links](#-links)
@@ -17,6 +18,9 @@
   - [👨‍💻 Author](#-author)
 
 ## 👀 Overview
+
+### ⌚️ Status
+✅ Finished!
 
 ### 💻 The Project
 Sneakers page for view products.
