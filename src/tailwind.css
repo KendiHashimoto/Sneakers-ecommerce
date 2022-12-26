@@ -15,7 +15,7 @@
 
   .active-burger-menu {
     @apply block fixed bg-white h-[1400px] w-3/5 left-0 top-0
-    p-7 shadow-2xl;
+    p-7 shadow-2xl z-20;
   }
 
   .hamburger-links {
@@ -50,7 +50,7 @@
   }
 
   .active-cart-container {
-    @apply block;
+    @apply block z-20;
   }
 
   .empty-cart {

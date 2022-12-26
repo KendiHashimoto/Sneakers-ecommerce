@@ -1,68 +1,75 @@
-# Frontend Mentor - E-commerce product page solution
+# 👟 Frontend Mentor - E-commerce product page solution
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+![](https://github.com/KendiHashimoto/Sneakers-ecommerce/blob/main/Peek%202022-12-26%2018-01.gif)
 
-## Table of contents 
+## 📝 Table of contents 
 
-- [Frontend Mentor - E-commerce product page solution](#frontend-mentor---e-commerce-product-page-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Running](#running)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-  - [Author](#author)
+- [👟 Frontend Mentor - E-commerce product page solution](#-frontend-mentor---e-commerce-product-page-solution)
+  - [📝 Table of contents](#-table-of-contents)
+  - [👀 Overview](#-overview)
+    - [💻 The Project](#-the-project)
+    - [🥷 The challenge](#-the-challenge)
+    - [🖇 Links](#-links)
+  - [📦 Running](#-running)
+  - [👷‍♂️ My process](#️-my-process)
+    - [🚀 Built with](#-built-with)
+  - [👨‍💻 Author](#-author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## 👀 Overview
 
-## Overview
+### 💻 The Project
+Sneakers page for view products.
 
-### The challenge
+### 🥷 The challenge
 
 Users should be able to:
 
 - [x] View the optimal layout for the site depending on their device's screen size
 - [x] See hover states for all interactive elements on the page
-- [x] Open a lightbox gallery by clicking on the large product image
 - [x] Switch the large product image by clicking on the small thumbnail images
 - [x] Add items to the cart
 - [x] View the cart and remove items from it
 
-### Running
+### 🖇 Links
 
-![]()
+- [Site](https://vercel.com/hashimoto1312/sneakers-ecommerce/63RpkUobAhCGfknsYPvXdETmp1q7) (lightbox lib error)
 
-### Links
+## 📦 Running
+1 - Clone this repository
+```python
+  git clone https://github.com/KendiHashimoto/Sneakers-ecommerce.git
+```
+2 - Open the path of the project and type in the terminal/cmd
+```python
+cd Sneakers-ecommerce
+```
+3 - And then type
+```python
+npm install
+```
+```python
+npm run dev
+```
 
-- [Site](https://vercel.com/hashimoto1312/sneakers-ecommerce/63RpkUobAhCGfknsYPvXdETmp1q7)
+## 👷‍♂️ My process
 
-## My process
-
-### Built with
+### 🚀 Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - [Talwind](https://tailwindcss.com/docs/installation) - CSS library
-- [Fslightbox](https://fslightbox.com/) - For lightboxes
-- [Vite](https://nextjs.org/)
-- 
-### What I learned
+- [PhotoSwipe](https://photoswipe.com/) - For lightboxes
+- [Vite](https://nextjs.org/) - For run project
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-### Continued development
+## 👨‍💻 Author
 
-## Author
+<img width="30%" src="https://github.com/KendiHashimoto.png">
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+Feito com ❤️ por Kendi Hashimoto 👋 Entre em contato!
+
+[![LinkedIn](https://img.shields.io/badge/KendiHashimoto-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kendi-hashimoto-202359220/)
+
+[![Linktree Badge](https://img.shields.io/badge/-KendiHashimoto-1de9b6?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/Hashimoto01)
