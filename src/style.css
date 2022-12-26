@@ -37,77 +37,11 @@ li:hover:after {
   top: 0;
 }
 
-/* LIGHTBOX */
-.fslightbox-toolbar {
-  top: 60% !important;
-  right: 1.5% !important;
-  background: none !important;
-}
-
-.fslightbox-slide-number-container {
-  font-weight: bold;
-}
-
-.fslightbox-container * {
-  display: flex;
-  justify-content: center;
-}
-
-.fslightbox-source {
-  width: 65% !important;
-  height: 65% !important;
-  border-radius: 15px;
-}
-
-.fslightbox-slide-btn-container {
-  padding: 0px !important;
-}
-
-.fslightbox-slide-btn-container-previous {
-  right: 38.2rem;
-}
-
-.fslightbox-slide-btn-container-next {
-  left: 38.2rem;
-}
-
-.fslightbox-slide-btn {
-  background-color: white !important;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-}
-
-.fslightbox-toolbar-button svg {
-  width: 35px;
-  height: 35px;
-}
-
-.fslightbox-toolbar-button .fslightbox-svg-path {
-  fill: orange !important;
-}
-
 @media (max-width: 1200px) {
   body {
     margin-right: 0px !important;
   }
-
-  .fslightbox-container {
-    display: none;
-  }
 }
 
 @media (max-width: 1000px) {
-  .fslightbox-slide-btn {
-    height: 50px;
-    width: 50px;
-  }
-
-  .fslightbox-slide-btn-container-previous {
-    right: 62%;
-  }
-
-  .fslightbox-slide-btn-container-next {
-    left: 62%;
-  }
 }

@@ -102,18 +102,18 @@
 
     <!-- BIG SNEAKER IMAGES -->
     <section class="flex flex-col">
-      <div class="bigSneaker-container">
-        <a data-fslightbox="gallery" href="assets/images/sneakers/image-product-1.0c6fe8e3.jpg" data-type="image">
+      <div id="sneaker" class="bigSneaker-container">
+        <a href="assets/images/sneakers/image-product-1.jpg" data-pswp-width="600" data-pswp-height="600"
+          target="_blank">
           <button class="mobileLightboxButtons previousLightboxBtn left-[4%]">
             <img src="assets/images/icons/icon-previous.svg" alt="Previous icon"></button>
 
-          <img class="bigSneaker-img active" src="assets/images/sneakers/image-product-1.0c6fe8e3.jpg"
-            alt="Sneaker first image">
-          <img class="bigSneaker-img inactive" src="assets/images/sneakers/image-product-2.a8acaa06.jpg"
+          <img class="bigSneaker-img active" src="assets/images/sneakers/image-product-1.jpg" alt="Sneaker first image">
+          <img class="bigSneaker-img inactive" src="assets/images/sneakers/image-product-2.jpg"
             alt="Sneaker second image">
-          <img class="bigSneaker-img inactive" src="assets/images/sneakers/image-product-3.5a0b3bac.jpg"
+          <img class="bigSneaker-img inactive" src="assets/images/sneakers/image-product-3.jpg"
             alt="Sneaker third image">
-          <img class="bigSneaker-img inactive" src="assets/images/sneakers/image-product-4.b130dea1.jpg"
+          <img class="bigSneaker-img inactive" src="assets/images/sneakers/image-product-4.jpg"
             alt="Sneaker fourth image">
 
           <button class="mobileLightboxButtons nextLightboxBtn right-[4%]">
@@ -122,28 +122,32 @@
       </div>
 
       <!-- THUMBNAILS -->
-      <div class="flex gap-7 max-bigDesktop:justify-center">
+      <div id="sneakers" class="flex gap-7 max-bigDesktop:justify-center">
         <div class="thumbnail-container">
-          <a data-fslightbox="gallery" href="assets/images/sneakers/image-product-1.0c6fe8e3.jpg" data-type="image">
-            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-1.0c6fe8e3.jpg"
+          <a href="assets/images/sneakers/image-product-1.jpg" data-pswp-width="500" data-pswp-height="500"
+            target="_blank">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-1-thumbnail.jpg"
               alt="Sneaker first image">
           </a>
         </div>
         <div class="thumbnail-container">
-          <a data-fslightbox="gallery" href="assets/images/sneakers/image-product-2.a8acaa06.jpg" data-type="image">
-            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-2.a8acaa06.jpg"
+          <a href="assets/images/sneakers/image-product-2.jpg" data-pswp-width="500" data-pswp-height="500"
+            target="_blank" data-pswp-width="1669" data-pswp-height="2500" target="_blank">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-2-thumbnail.jpg"
               alt="Sneaker second image">
           </a>
         </div>
         <div class="thumbnail-container">
-          <a data-fslightbox="gallery" href="assets/images/sneakers/image-product-3.5a0b3bac.jpg" data-type="image">
-            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-3.5a0b3bac.jpg"
+          <a href="assets/images/sneakers/image-product-3.jpg" data-pswp-width="500" data-pswp-height="500"
+            target="_blank">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-3-thumbnail.jpg"
               alt="Sneaker third image">
           </a>
         </div>
         <div class="thumbnail-container">
-          <a data-fslightbox="gallery" href="assets/images/sneakers/image-product-4.b130dea1.jpg" data-type="image">
-            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-4.b130dea1.jpg"
+          <a href="assets/images/sneakers/image-product-4.jpg" data-pswp-width="500" data-pswp-height="500"
+            target="_blank">
+            <img class="rounded-lg hover:opacity-40" src="assets/images/sneakers/image-product-4-thumbnail.jpg"
               alt="Sneaker fourth image">
           </a>
         </div>
@@ -199,11 +203,9 @@
       Hashimoto</a>.
   </footer>
 
-
   <!-- SCRIPTS -->
   <script type="module" src="src/main.js"></script>
-  <!-- <script src="fslightbox-basic-3.3.1/fslightbox.js"></script> -->
-  <script type="module" src="node_modules/fslightbox/index.js"></script>
+  <script type="module" src="src/photoswipe.js"></script>
   <script src="https://kit.fontawesome.com/2196e33625.js" crossorigin="anonymous"></script>
 </body>
 
