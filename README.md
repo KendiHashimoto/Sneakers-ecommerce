@@ -1,6 +1,7 @@
 # 👟 Frontend Mentor - E-commerce product page solution
 
 ![](https://github.com/KendiHashimoto/Sneakers-ecommerce/blob/main/Peek%202022-12-26%2018-01.gif)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📝 Table of contents 
 
