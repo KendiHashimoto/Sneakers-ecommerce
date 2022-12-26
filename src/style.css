@@ -37,11 +37,29 @@ li:hover:after {
   top: 0;
 }
 
+/* LIGHTBOX */ 
+.pswp__img, .pswp__zoom-wrap {
+  border-radius: 15px;
+}
+
+.pswp__icn {
+  fill: orange !important; 
+}
+
+.pswp__button--arrow--prev {
+  left: 30% !important;
+}
+
+.pswp__button--arrow--next {
+  right: 30% !important;
+}
+
 @media (max-width: 1200px) {
   body {
     margin-right: 0px !important;
   }
-}
 
-@media (max-width: 1000px) {
+  .pswp--open {
+    display: none !important;
+  }
 }
