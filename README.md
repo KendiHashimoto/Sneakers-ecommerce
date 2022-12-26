@@ -37,7 +37,7 @@ Users should be able to:
 
 ### 🖇 Links
 
-- [Site](https://vercel.com/hashimoto1312/sneakers-ecommerce/63RpkUobAhCGfknsYPvXdETmp1q7) (lightbox lib error)
+- [Site](https://sneakers-ecommerce-orpin.vercel.app/) (lightbox lib error)
 
 ## 📦 Running
 1 - Clone this repository
