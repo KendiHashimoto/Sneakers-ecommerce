@@ -12,7 +12,7 @@
     - [💻 The Project](#-the-project)
     - [🥷 The challenge](#-the-challenge)
     - [🖇 Links](#-links)
-  - [📦 Running](#-running)
+  - [📦 Install](#-install)
   - [👷‍♂️ My process](#️-my-process)
     - [🚀 Built with](#-built-with)
   - [👨‍💻 Author](#-author)
@@ -39,7 +39,7 @@ Users should be able to:
 
 - [Site](https://sneakers-ecommerce-orpin.vercel.app/) (lightbox lib error)
 
-## 📦 Running
+## 📦 Install
 1 - Clone this repository
 ```python
   git clone https://github.com/KendiHashimoto/Sneakers-ecommerce.git
